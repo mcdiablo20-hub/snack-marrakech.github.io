@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snack Marrakech - Burgers, Tacos, Pizzas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #FF4500, #FFD700); /* Dégradé orange-jaune pour l'envie et la chaleur */
+            color: #333;
+        }
+        header {
+            background: #8B0000; /* Rouge élégant pour Marrakech */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .info {
+            text-align: center;
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h2 {
+            text-align: center;
+            color: #8B0000;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .menu-item {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .menu-item:hover {
+            transform: scale(1.05); /* Animation pour une expérience de découverte */
+        }
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .menu-item h3 {
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+        .menu-item p {
+            margin: 5px 0;
+        }
+        .price {
+            font-weight: bold;
+            color: #FF4500;
+            font-size: 1.2em;
+        }
+        .order-btn {
+            background: #25D366; /* Vert WhatsApp */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 10px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .order-btn:hover {
+            background: #128C7E;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #8B0000;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Snack Marrakech</h1>
+        <p class="info">Adresse : Rue de Marrakech n°138, Oujda</p>
+        <p class="info">Téléphone : +212 698 162 930</p>
+    </header>
+
+    <section id="burgers">
+        <h2>Burgers</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://via.placeholder.com/300x200?text=Burger+Classique" alt="Burger Classique">
+                <h3>Burger Classique</h3>
+                <p>Viande grillée, fromage, salade, tomate.</p>
+                <p class="price">50 MAD</p>
+                <a href="https://wa.me/212698162930?text=Bonjour%2C%20je%20voudrais%20commander%20un%20Burger%20Classique%20%C3%A0%2050%20MAD" class="order-btn">Commander</a>
+            </div>
+            <div class="menu-item">
+                <img src="https://via.placeholder.com/300x200?text=Burger+Spicy" alt="Burger Spicy">
+                <h3>Burger Spicy</h3>
+                <p>Viande épicée, jalapenos, sauce piquante.</p>
+                <p class="price">60 MAD</p>
+                <a href="https://wa.me/212698162930?text=Bonjour%2C%20je%20voudrais%20commander%20un%20Burger%20Spicy%20%C3%A0%2060%20MAD" class="order-btn">Commander</a>
+            </div>
+            <!-- Ajoutez plus d'articles ici -->
+        </div>
+    </section>
+
+    <section id="tacos">
+        <h2>Tacos</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://via.placeholder.com/300x200?text=Taco+Classique" alt="Taco Classique">
+                <h3>Taco Classique</h3>
+                <p>Viande hachée, fromage, légumes frais.</p>
+                <p class="price">40 MAD</p>
+                <a href="https://wa.me/212698162930?text=Bonjour%2C%20je%20voudrais%20commander%20un%20Taco%20Classique%20%C3%A0%2040%20MAD" class="order-btn">Commander</a>
+            </div>
+            <div class="menu-item">
+                <img src="https://via.placeholder.com/300x200?text=Taco+Veggie" alt="Taco Veggie">
+                <h3>Taco Veggie</h3>
+                <p>Légumes grillés, fromage, sauce.</p>
+                <p class="price">45 MAD</p>
+                <a href="https://wa.me/212698162930?text=Bonjour%2C%20je%20voudrais%20commander%20un%20Taco%20Veggie%20%C3%A0%2045%20MAD" class="order-btn">Commander</a>
+            </div>
+            <!-- Ajoutez plus d'articles ici -->
+        </div>
+    </section>
+
+    <section id="pizzas">
+        <h2>Pizzas</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://via.placeholder.com/300x200?text=Pizza+Margherita" alt="Pizza Margherita">
+                <h3>Pizza Margherita</h3>
+                <p>Tomate, mozzarella, basilic.</p>
+                <p class="price">70 MAD</p>
+                <a href="https://wa.me/212698162930?text=Bonjour%2C%20je%20voudrais%20commander%20une%20Pizza%20Margherita%20%C3%A0%2070%20MAD" class="order-btn">Commander</a>
+            </div>
+            <div class="menu-item">
+                <img src="https://via.placeholder.com/300x200?text=Pizza+Pepperoni" alt="Pizza Pepperoni">
+                <h3>Pizza Pepperoni</h3>
+                <p>Pepperoni, fromage, sauce tomate.</p>
+                <p class="price">80 MAD</p>
+                <a href="https://wa.me/212698162930?text=Bonjour%2C%20je%20voudrais%20commander%20une%20Pizza%20Pepperoni%20%C3%A0%2080%20MAD" class="order-btn">Commander</a>
+            </div>
+            <!-- Ajoutez plus d'articles ici -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Snack Marrakech. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
